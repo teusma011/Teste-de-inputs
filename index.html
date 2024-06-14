@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de inputs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="https://formspree.io/f/mkndlvey" method="post">
+
+    <p>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="SeuNome">Seu nome</label> <br>
+        <input type="text" id="SeuNome" name="Nome" required> <br> 
+
+        <label for="SuaIdade">Sua idade</label> <br>
+        <input type="number" id="SuaIdade" name="Idade" required> <br>
+
+        <label for="iEmail">Seu email</label> <br>
+        <input type="email" id="iEmail" name="Idade" required>
+    </fieldset>
+    </p>
+
+    <p>
+    
+        <label for="DigiteSuaMensagem">Digite sua mensagem</label> <br>
+        <textarea type="text" id="DigiteSuaMensagem" name="Mensagem" rows="5" cols="50"> </textarea>
+    </p>
+
+    <p>
+        <label for="">Qual time você torce ?</label>
+        <ul type="None">
+            <label for="iSantos">
+            <li><input checked="checked" type="checkbox" id="iSantos" value="Sim" name="Santos">Santos</li>
+            </label>
+
+            <label for="iPalmeiras">
+            <li><input type="checkbox" id="iPalmeiras" value="Sim" name="Palmeiras">Palmeiras</li>
+            </label>
+
+            <label for="iFlamengo">
+            <li><input type="checkbox" id="iFlamengo" value="Sim" name="Flamengo">Flamengo</li>
+            </label>
+        </ul>
+    </p> 
+    
+    <p>
+        <label for="">Qual time da nba você torce ?</label>
+        <ul type="None">
+            <label for="iLakers">
+            <li><input checked="checked" value="Lakers" type="radio" id="iLakers" name="TimeNba">Lakers</li>
+            </label>        
+
+            <label for="iCeltics">
+            <li><input value="Celtics" type="radio" id="iCeltics" name="TimeNba">Celtics</li>
+            </label>
+
+            <label for="iSuns">
+            <li><input value="Suns" type="radio" id="iSuns" name="TimeNba">Suns</li>
+            </label>
+        </ul>
+    </p>
+
+    <p>
+        <label for="iEscolhaSuaCidade">Escolha Sua Cidade</label> <br>
+        <select name="EscolhaSuaCidade" id="iEscolhaSuaCidade">
+            <option value="Carapicuiba">Carapicuiba</option>
+            <option value="SãoPaulo">São Paulo</option>
+            <option value="Osasco">Osasco</option>
+            <option value="GranjaViana">Granja Viana</option>
+        </select>
+        </label>
+
+    </p>
+
+    <p>
+        <label for="itermosDecontrato">
+        <input type="checkbox" value="sim"  id="itermosDecontrato" name="termosDecontrato" required> Eu aceitos os termos do contrato
+        </label>
+    </p>
+
+    <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

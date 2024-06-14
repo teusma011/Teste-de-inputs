@@ -1,0 +1,20 @@
+*{
+    font-family:'inter';
+}
+#DigiteSuaMensagem{
+    resize:none;
+}
+
+/* Tirando a setas do input number */
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+}
+/* fim */
+
+fieldset{
+    width: 180px;
+}
